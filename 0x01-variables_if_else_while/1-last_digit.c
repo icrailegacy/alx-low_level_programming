@@ -4,7 +4,7 @@
 
 /**
 *main - assigns random number to the variable n and prints the last digit
-*Return : always 0
+*Return: always 0
 */
 
 int main(void)
@@ -13,6 +13,7 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+
 	printf("Last digit of %d is ", n);
 	if (n > 5)
 	{
