@@ -3,32 +3,24 @@
 #include <stdio.h>
 
 /**
-*main - assigns random number to the variable n and prints the last digit
-*Return: always 0
-*/
-
+ * main - assigns a random number to variable n, then prints last digit
+ * Return: always 0
+ */
 int main(void)
 {
 	int n;
+	int m;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	m = n % 10;
 
-	printf("Last digit of %d is ", n);
-	if (n > 5)
-	{
-		printf("and is greater than 5");
-	}
-	if (n == 0)
-	{
-		printf("and is 0");
-	}
-	if (n < 0 && n != 0)
-	{
-		printf("and is less than 6 and not 0");
-	}
-
-	printf("\n");
+	if (m > 5)
+		printf("Last digit of %i is %i and is greater than 5\n", n, m);
+	else if (m == 0)
+		printf("Last digit of %i is %i and is 0\n", n, m);
+	else
+		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, m);
 
 	return (0);
 }
