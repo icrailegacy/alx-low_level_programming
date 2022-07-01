@@ -4,7 +4,7 @@
 
 /**
  *main -> assign a random number to the variable n each tme it is run
- and prints out whether the number is positive, zero or negative
+ *and prints out whether the number is positive, zero or negative
  */
 int main(void)
 {
