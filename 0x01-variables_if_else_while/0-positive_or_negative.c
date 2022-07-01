@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- *main -> assign a random number to the variable n each tme it is run and prints out whether the number is positive, zero or negative
+ *main -> assign a random number to the variable n each tme it is run
+ and prints out whether the number is positive, zero or negative
  *return: 0 if exited properly, non-zero otherwise
  */
 int main(void)
