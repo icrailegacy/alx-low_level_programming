@@ -1,21 +1,22 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
+#include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase followed by a new line
- *Return: always 0
+ * main - Uses putchar to print all letters of the alphabet except 'q' and 'e'.
+ * Description - writes a program that prints the alphabet in lower case
+ * Return: always 0
  */
 
 int main(void)
 {
-	int ch;
+	char c = 'a';
 
-	for (ch = 97; ch <= 122; ch++)
+	while (c <= 'z', c++)
 	{
-		putchar(ch);
+		if (c != 'q' && c != 'e')
+			putchar(c);
 	}
-	putchar(10);/*this is the ASCII code for new line*/
+	putchar('\n');
 
-	return (0); /* return is always 0 */
+	return (0);
 }
