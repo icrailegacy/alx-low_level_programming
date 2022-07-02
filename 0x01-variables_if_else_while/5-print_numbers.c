@@ -1,0 +1,21 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+/**
+ * main - print numbers
+ * Description: print single-digit numbers of base 10, starting from 0
+ * Return: always 0
+ */
+
+int main(void)
+{
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%i", i);
+	}
+	putchar('\n');
+
+	return (0);
+}
