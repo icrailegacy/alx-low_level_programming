@@ -9,13 +9,13 @@
 
 int main(void)
 {
-	int c = 0;
+	int i;
 
-	while (c <= 9)
+	for (i = 0; i < 10; i++)
 	{
-		printf("%i \n", c);
-		c++;
+		printf("%i", i);
 	}
+	putchar('\n');
 
 	return (0);
 }
