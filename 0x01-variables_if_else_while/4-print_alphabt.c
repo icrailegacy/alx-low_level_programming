@@ -10,8 +10,8 @@
 int main(void)
 {
 	int ch;
-	ch != 101
-	ch != 113
+	ch != 101;
+	ch != 113;
 	for (ch = 97; ch <= 122; ch++)
 		{
 		putchar(ch);
