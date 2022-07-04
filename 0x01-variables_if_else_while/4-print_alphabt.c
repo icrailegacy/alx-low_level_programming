@@ -11,11 +11,9 @@ int main(void)
 {
 	int ch;
 
-	for (ch = 97; ch <= 122; ch++)
-	{
-		while (ch != 101 && ch != 113)
+	for (ch = 97; ch <= 122 && != 101 && != 113; ch++)
 		{
-			putchar(ch);
+		putchar(ch);
 		}
 	}
 	putchar(10);
