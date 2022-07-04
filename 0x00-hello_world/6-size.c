@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - write a C program that prints the size of various types 
+ * main - write a C program that prints the size of various types
  *on the computer it is compiled on
  * Return: Always 0
  */
