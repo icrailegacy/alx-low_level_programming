@@ -11,9 +11,9 @@ int main(void)
 {
 	int ch;
 
-	for (ch = 97, ch <= 122 && ch != 101 && ch != 113, ch++)
+	for (ch = 97; ch <= 122 && ch != 101 && ch != 113; ch++)
 	{
-		putcha(ch);
+		putchar(ch);
 	}
 	putchar(10);
 
