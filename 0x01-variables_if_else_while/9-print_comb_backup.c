@@ -13,12 +13,17 @@
 
 int main(void)
 {
-	int c;
-	for (c = 10; c < 100; c++)
+	int i = 0;
+
+	while (i < 10)
 	{
-		putchar(c + '0');
-		putchar(44);
-		putchar(30);
+		putchar(i + '0');
+		if (i < 9)
+		{
+			putchar(44);
+			putchar(32);
+		}
+		i++;
 	}
 	putchar('\n');
 
