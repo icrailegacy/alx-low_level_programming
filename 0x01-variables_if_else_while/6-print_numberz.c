@@ -2,20 +2,19 @@
 #include <stdio.h>
 
 /**
- * main - print all single digit numbers of base 10 starting with 0
- * Description: you are not allowed to use any variable of type char.
- * You can only use putchar function.
- * You can only use putchar twice.
+ * main - print numbers
+ * Description: print single-digit numbers of base 10, starting from 0
  * Return: always 0
  */
 
 int main(void)
 {
-	int i;
+	int c = 0;
 
-	for (i = 0; i < 10; i++)
+	while (c <= 9)
 	{
-		putchar(i + '0');
+		putchar(c + '0');
+		c++;
 	}
 	putchar('\n');
 
