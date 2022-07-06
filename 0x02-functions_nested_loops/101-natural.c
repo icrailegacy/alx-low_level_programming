@@ -5,7 +5,7 @@
  *
  *Return: always 0
  */
- 
+
 int main(void)
 {
 int x = 1024, y, sum = 0;
