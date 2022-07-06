@@ -1,24 +1,31 @@
 #include "main.h"
 
 /**
- * _isalpha - Check Holberton
- * @c: An input character
- * Description: function returns 1 if the character is a
- * letter, lowercase or uppercase.
- * Return: 1 or 0 in otherwise.
+ * print_sign - Check Holberton
+ * @n: An input number
+ * Description: Tohis function prints the sign of the number
+ * Return: 1 if number is positive, o if number is 0, or
+ * -1 if number is negative
  */
-int _isalpha(int c)
+int print_sign(int n)
 {
-	char lower, upper;
-	int isletter = 0;
+	int value;
 
-	for (lower = 'a'; lower <= 'z'; lower++)
+	if (n > 0)
 	{
-		for (upper = 'A'; upper <= 'Z'; upper++)
-		{
-			if (c == lower || c == upper)
-				isletter = 1;
-		}
+		value = 1;
+		_putchar('+');
 	}
-	return (isletter);
+	else if (n == 0)
+	{
+		value = 0;
+		_putchar('0');
+	}
+	else
+	{
+		value = -1;
+		_putchar('-');
+	}
+
+	return (value);
 }
