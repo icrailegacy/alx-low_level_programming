@@ -5,8 +5,8 @@
  * @n: An input number
  * Description: use the _putchar function
  * Return: 1 if number is positive and print "+"
- * returns 0 if number is 0, 
- * returns -1 if number is less than 0 and prints "-" 
+ * returns 0 if number is 0,
+ * returns -1 if number is less than 0 and prints "-"
  */
 
 int print_sign(int n)
