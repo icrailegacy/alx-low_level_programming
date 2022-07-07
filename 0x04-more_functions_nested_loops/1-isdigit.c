@@ -2,6 +2,7 @@
 
 /**
 *_isdigit - Checks for digits (0 through 9)
+*@c: int type parameter
 *Return: 1 if digit, else 0
 */
 
