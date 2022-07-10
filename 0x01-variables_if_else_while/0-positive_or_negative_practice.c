@@ -1,0 +1,28 @@
+
+#include <stdlib.h>
+#include <time.h>
+/* more headers goes there */
+
+/**
+* main - to test if a nymber i spositive or negative
+* return: always 0
+*/
+
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+  
+    if (n < 0)
+    {
+      printf("%d is negtive", n);
+    }
+    else
+    {
+      printf("%D is positive", n);
+    }
+  
+  return (0);
+}
