@@ -10,19 +10,35 @@
  * Return: a pointer to the array, or NULL if it fails
  */
 
-char *create_array(unsigned int size, char c)
-{
-	unsigned int i = 0;
-	char *arr;
+#include <stdlib.h>
 
-	arr = (char *) malloc(size);
-	if (size == 0 || arr == NULL)
+/**
+ * _strdup - copy
+ * @str: pointer to string
+ * Return: pointer
+ */
+
+char *_strdup(char *str)
+{
+	char *s;
+	int i = 0, j;
+
+	if (!str)
+		return (NULL);
+
+	while (*(str + i))
+		i++;
+	i++;
+	s = malloc(sizeof(char) * i);
+
+	if (s == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++)
+
+	for (j = 0; j <= i; j++)
 	{
-		arr[i] = c;
+		s[j] = str[j];
 	}
-	return (arr);
+	return (s);
 }
