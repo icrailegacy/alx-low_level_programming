@@ -4,13 +4,12 @@
 *
 */
 
-void _puts_recursion(char *s)
+void _print_rev_recursion(char *s)
 {
-if (strlen(s) == 0)
+if (*s == '\0')
 {
-return 0;
+putchar (s-1);
+_print_rev_recursion(s - 2);
 }
-return s[0];
-return _puts_recursion s + 1;
-
+_putchar ("\n");
 }
