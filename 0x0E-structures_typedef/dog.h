@@ -1,5 +1,5 @@
 #ifndef FILE_DOG
-#define FILE_DOG 
+#define FILE_DOG
 
 /**
  * struct dog - structure to document dog's name, age and owner
@@ -10,9 +10,9 @@
 
 struct dog
 {
-  char *name;
-  float age;
-  char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
 
 typedef struct dog dog_t;
