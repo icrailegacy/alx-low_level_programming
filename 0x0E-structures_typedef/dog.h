@@ -2,7 +2,7 @@
 #define FILE_DOG 
 
 /**
- * struct dog - structure fo document dog's name, age and owner
+ * struct dog - structure to document dog's name, age and owner
  * @name: the dog's name
  * @age: the dog's age
  * @owner: the dog'd owner's name
