@@ -1,4 +1,4 @@
-### Learning Objectives
+###### Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
@@ -28,16 +28,16 @@ All your header files should be include guarded
 Please use this data structure for this project:
 
 \/**\
-\ * struct list_s - singly linked list\
-\ * @str: string - (malloc'ed string)\
-\ * @len: length of the string\
-\ * @next: points to the next node\
-\ *\
-\ * Description: singly linked list node structure\
-\ */\
+\* struct list_s - singly linked list\
+\* @str: string - (malloc'ed string)\
+\* @len: length of the string\
+\* @next: points to the next node\
+\*\
+\* Description: singly linked list node structure\
+\*/\
 \typedef struct list_s\
 \{\
-\   char *str;\
-\    unsigned int len;\
-\   struct list_s *next;\
+	\char *str;\
+	\unsigned int len;\
+	\struct list_s *next;\
 \} list_t;\
