@@ -10,12 +10,13 @@
  * if write fails or does not write the expected amount of bytes, return 0
  * Return: the number of letters it could read & print, or 0 if it fails
  */
- 
+
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	int i, y;
 	char *buf;
+	
 	if (!filename)
 		return (0);
 	fd = open(filename, O_RDONLY);
